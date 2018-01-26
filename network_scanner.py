@@ -1,6 +1,10 @@
 import os
 import time
-from definitions import TXT
+
+def TXT(file_name, content):
+    w = open(file_name, 'a')
+    w.write(content)
+    w.close()
 
 whitelist = []
 
